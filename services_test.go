@@ -1,4 +1,4 @@
-package database
+package main
 
 import (
 	"testing"
@@ -6,10 +6,10 @@ import (
 )
 
 func TestCreateOne(t *testing.T) {
-	user := User{
-		Name: "Blas",
-		Email: "mail@server.com",
-		Phone: "017630725623",
+	user := &User{
+		Name:      "Jhon",
+		Email:     "mailing@server.com",
+		Phone:     "01763078827",
 		CreatedAt: time.Now(),
 		UpdatedAt: time.Now(),
 	}
